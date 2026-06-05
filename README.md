@@ -2,9 +2,25 @@
 
 ## Overview
 
-HAIBAZO Book Review Application is a full-stack web application developed as a technical assessment project.
+HAIBAZO Book Review Application is a full-stack web application developed as part of the HAIBAZO Intern Software Engineer Technical Assessment.
 
-The system allows users to manage Authors, Books, and Reviews through a simple and user-friendly interface. Data is stored in PostgreSQL and managed through RESTful APIs built with FastAPI.
+The application allows users to manage Authors, Books, and Reviews through a simple and user-friendly interface. The system follows a client-server architecture with a React frontend, FastAPI backend, and PostgreSQL database.
+
+---
+
+## Live Demo
+
+### Frontend
+
+https://haibazo-book-review-ecru.vercel.app/
+
+### Backend API
+
+https://haibazo-book-review-api.onrender.com
+
+### API Documentation
+
+https://haibazo-book-review-api.onrender.com/docs
 
 ---
 
@@ -15,16 +31,25 @@ The system allows users to manage Authors, Books, and Reviews through a simple a
 * ReactJS
 * Axios
 * CSS3
+* Vite
 
 ### Backend
 
 * FastAPI
 * SQLAlchemy
 * Pydantic
+* Uvicorn
 
 ### Database
 
 * PostgreSQL
+* Supabase
+
+### Deployment
+
+* Vercel (Frontend)
+* Render (Backend)
+* Supabase (Database)
 
 ### Version Control
 
@@ -50,7 +75,7 @@ The system allows users to manage Authors, Books, and Reviews through a simple a
 * View Book List
 * Update Book
 * Delete Book
-* Select Author
+* Assign Author to Book
 * Pagination
 * Form Validation
 
@@ -60,7 +85,7 @@ The system allows users to manage Authors, Books, and Reviews through a simple a
 * View Review List
 * Update Review
 * Delete Review
-* Select Book
+* Assign Review to Book
 * Pagination
 * Form Validation
 
@@ -96,7 +121,7 @@ The system allows users to manage Authors, Books, and Reviews through a simple a
 ## Project Structure
 
 ```text
-book-review-app
+HAIBAZO-BOOK-REVIEW
 │
 ├── backend
 │   ├── database.py
@@ -104,6 +129,7 @@ book-review-app
 │   ├── schemas.py
 │   ├── seed.py
 │   ├── main.py
+│   ├── requirements.txt
 │   └── .env
 │
 ├── frontend
@@ -126,7 +152,7 @@ book-review-app
 
 ## Installation
 
-### Backend
+### Backend Setup
 
 ```bash
 cd backend
@@ -154,7 +180,7 @@ http://127.0.0.1:8000/docs
 
 ---
 
-### Frontend
+### Frontend Setup
 
 ```bash
 cd frontend
@@ -192,7 +218,7 @@ http://localhost:5173
 
 ## Pagination
 
-Pagination is implemented on:
+Pagination is implemented for:
 
 * Authors List
 * Books List
@@ -202,8 +228,23 @@ Each page displays 5 records.
 
 ---
 
+## Deployment Notes
+
+The application is deployed using:
+
+* Frontend: Vercel
+* Backend: Render
+* Database: Supabase PostgreSQL
+
+Note: The backend is hosted on Render Free Plan. The first request after a period of inactivity may take a few seconds to respond while the service wakes up.
+
+---
+
 ## Author
 
 **Huynh Doan Tan Phat**
+
+Information Technology Student
+FPT Greenwich Vietnam – Da Nang Campus
 
 Technical Assessment Submission for HAIBAZO.
